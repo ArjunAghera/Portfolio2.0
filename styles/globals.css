@@ -1,16 +1,59 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-xl {
+  height: 90vh;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Agatha Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Agatha Regular"), url("../fonts/Agatha.woff") format("woff");
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "The Scientist";
+  font-style: normal;
+  font-weight: normal;
+  src: local("The Scientist"), url("../fonts/TheScientist-L3EyW.ttf");
+}
+
+@font-face {
+  font-family: "18C";
+  font-style: normal;
+  font-weight: normal;
+  src: local("18C"), url("../fonts/LovelyCoffee-jEVeO.ttf");
+}
+
+h1 {
+  font-family: "The Scientist";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.background {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(150px);
+}
+
+.bg-1 {
+  background-image: url(../public/Cover-1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-2 {
+  background-image: url(../public/Cover-2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-3 {
+  background-image: url(../public/Cover-3.png);
+  background-size: cover;
+  background-position: center;
 }
