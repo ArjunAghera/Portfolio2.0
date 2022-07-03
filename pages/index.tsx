@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Arjun Aghera's Portfolio</title>
+        <title>{`Arjun Aghera's Portfolio`}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className=" bg-1">
