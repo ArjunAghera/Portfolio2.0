@@ -16,7 +16,7 @@ const WebDevProjects = () => {
         <a
           href="https://mujconnect.co"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer"
           className=" text-4xl md:text-6xl font-brandSecondary text-brandTextSecondary font-extrabold lg:mt-16"
         >
           MUJ-Connect
