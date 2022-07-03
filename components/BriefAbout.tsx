@@ -25,6 +25,7 @@ const BriefAbout = () => {
             height={600}
             objectFit="contain"
             objectPosition="left"
+            alt="my photo"
           />
         </motion.div>
         <div className=" lg:pr-20 lg:-ml-16  text-xs text-center md:text-left md:text-sm lg:text-xl">
