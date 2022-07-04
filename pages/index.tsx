@@ -16,9 +16,9 @@ export default function Home() {
       <div className="bg-2">
         <BriefAbout />
       </div>
-      <div className="bg-3">
-        <WebDevProjects />
-      </div>
+      {/* <div className="bg-3"> */}
+      <WebDevProjects />
+      {/* </div> */}
       {/* <OtherProjects /> */}
     </>
   );
