@@ -54,9 +54,8 @@ h1 {
 
 .bg-3 {
   background-image: url(../public/Cover-3.png);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  background-repeat: repeat-y;
 }
 
 .pt-120 {
