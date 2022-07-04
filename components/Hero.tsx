@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className=" background h-screen">
+    <div className=" background h-auto">
       <div>
-        {/* <motion.h2
+        <motion.h1
           initial="hidden"
           animate="visible"
           variants={{
@@ -15,15 +15,15 @@ const Hero = () => {
               transition: { delay: 0.5, duration: 2 },
             },
           }}
-          className=" text-5xl lg:text-7xl float-left text-brandSecondary pl-16 pt-8 cursor-vertical-text"
+          className=" text-lg lg:text-3xl float-left text-brandTextPrimary pl-16 pt-8 cursor-vertical-text"
         >
-          AA
-        </motion.h2> */}
+          ArjunAghera
+        </motion.h1>
       </div>
-      <div className=" pt-96 md:pt-96 lg:ml-48">
-        <p className=" text-center text-md md:text-lg lg:text-xl text-brandSecondary font-brandSecondary lg:float-left lg:mt-10 lg:ml-60 p-4">
+      <div className=" pt-96  md:pt-96 space-y-6">
+        {/* <p className=" text-center text-md lg:text-xl text-brandSecondary font-brandSecondary lg:float-left  p-4 cursor-default">
           A Masterpiece of Masterpieces.
-        </p>
+        </p> */}
         <motion.div
           initial="hidden"
           animate="visible"
@@ -36,7 +36,7 @@ const Hero = () => {
             },
           }}
         >
-          <h1 className=" text-center lg:text-left text-4xl md:text-6xl lg:text-9xl font-brandPrimary text-brandTextSecondary">
+          <h1 className=" text-center text-4xl md:text-6xl lg:text-9xl font-brandPrimary lg:ml-64 text-brandTextSecondary cursor-default">
             Made with
           </h1>
         </motion.div>
@@ -52,7 +52,7 @@ const Hero = () => {
             },
           }}
         >
-          <h1 className=" text-center lg:text-left text-4xl md:text-6xl lg:text-9xl font-brandPrimary lg:pl-16 text-brandTextPrimary">
+          <h1 className=" text-center text-4xl md:text-6xl lg:text-9xl font-brandPrimary lg:pl-16 text-brandTextPrimary cursor-default pb-72">
             Coffee And Code
           </h1>
         </motion.div>
