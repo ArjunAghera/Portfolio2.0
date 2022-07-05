@@ -1,11 +1,11 @@
 import React from "react";
 
 type Props = {
-  isPhotography: boolean;
-  setIsPhotography: (active: boolean) => void;
+  _isPhotoshop: boolean;
+  setIsPhotoshop: (active: boolean) => void;
 };
 
-export const PhotoshopModal = ({ isPhotoshop, setIsPhotoshop }) => {
+export const PhotoshopModal = ({ _isPhotoshop, setIsPhotoshop }: Props) => {
   const handleClose = () => {
     setIsPhotoshop(false);
     document.body.style.overflow = "auto";

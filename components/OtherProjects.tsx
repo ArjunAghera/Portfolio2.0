@@ -47,7 +47,7 @@ export const OtherProjects = () => {
           }
         >
           <PhotographyModal
-            isPhotography={isPhotography}
+            _isPhotography={isPhotography}
             setIsPhotography={setIsPhotography}
           />
         </div>
@@ -59,7 +59,7 @@ export const OtherProjects = () => {
           }
         >
           <PhotoshopModal
-            isPhotoshop={isPhotoshop}
+            _isPhotoshop={isPhotoshop}
             setIsPhotoshop={setIsPhotoshop}
           />
         </div>
