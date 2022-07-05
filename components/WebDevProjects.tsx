@@ -28,7 +28,7 @@ const WebDevProjects = () => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          className="pt-8 md:pt-16 w-fit mx-auto"
+          className="pt-8 md:pt-16 w-fit mx-auto pb-8"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
           // zIndex={5}
