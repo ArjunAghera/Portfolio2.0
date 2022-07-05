@@ -35,9 +35,35 @@ h1 {
   display: none;
 }
 
+.border-gradient {
+  position: relative;
+  border: 5px solid transparent;
+  background: #f2f2f2;
+  background-clip: padding-box;
+  border-radius: 10px;
+}
+
+.border-gradient::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  bottom: -5px;
+  left: -5px;
+  right: -5px;
+  background: linear-gradient(to bottom right, #ff7f0f8e, #ec2dfd5d);
+  opacity: 0.1;
+  z-index: -1;
+  border-radius: 10px;
+}
+
 .background {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(120px);
+}
+
+.background-modal {
+  background: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(300px);
 }
 
 .bg-1 {
@@ -54,6 +80,18 @@ h1 {
 
 .bg-3 {
   background-image: url(../public/Cover-3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-4 {
+  background-image: url(../public/Cover-4.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-5 {
+  background-image: url(../public/Cover-5.png);
   background-size: cover;
   background-position: center;
 }
