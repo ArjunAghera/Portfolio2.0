@@ -40,12 +40,13 @@ export const Contactme = () => {
             <br /> using smart contract?
           </h2>
           <p className=" font-brandSecondary text-brandTextSecondary font-extralight mt-12 px-12 md:px-12 text-sm md:text-lg">
-            <span className="font-bold">Plesae note:</span> Smart Contract is
+            <span className="font-bold">{`Plesae note:`}</span>{" "}
+            {`Smart Contract is
             deployed on a testnet so don't use your mainnet account to send a
-            message!
+            message!`}
             <br />
-            So please switch your Metamask network from mainnet account to
-            Rinkeby testnet.
+            {`So please switch your Metamask network from mainnet account to
+            Rinkeby testnet.`}
           </p>
           <form>
             <textarea
@@ -112,7 +113,11 @@ export const Contactme = () => {
           </ul>
           <div className=" hidden md:block font-brandSecondary px-12 mt-20 text-brandTextSecondary">
             <h3 className=" text-2xl font-medium">A random quote for you:</h3>
-            <p className=" pt-2 text-lg font-light">"{quote}"</p>
+            <p className=" pt-2 text-lg font-light">
+              {`"`}
+              {quote}
+              {`"`}
+            </p>
           </div>
         </div>
       </div>
