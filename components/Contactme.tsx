@@ -21,7 +21,6 @@ export const Contactme = () => {
     axios
       .request(options)
       .then(function (response) {
-        console.log(response.data);
         setQuote(response?.data?.content);
       })
       .catch(function (error) {
