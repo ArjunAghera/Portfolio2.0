@@ -1,16 +1,18 @@
 import React from "react";
 
 type Props = {
-  _isPhotography: boolean;
-  setIsPhotography: (active: boolean) => void;
+  _showModal: boolean;
+  setShowModal: (active: boolean) => void;
+  modalTitle: string;
 };
 
-export const PhotographyModal = ({
-  _isPhotography,
-  setIsPhotography,
+export const OtherProjectsModal = ({
+  _showModal: _showModal,
+  setShowModal: setShowModal,
+  modalTitle: modalTitle,
 }: Props) => {
   const handleClose = () => {
-    setIsPhotography(false);
+    setShowModal(false);
     document.body.style.overflow = "auto";
   };
   return (
@@ -24,7 +26,7 @@ export const PhotographyModal = ({
         <li className=" h-4 w-4 cursor-pointer bg-green-600 rounded-full"></li>
       </ul>
       <h1 className=" text-4xl md:text-6xl font-brandSecondary font-extrabold text-brandTextSecondary text-center pt-20">
-        Photography
+        {modalTitle}
       </h1>
     </div>
   );

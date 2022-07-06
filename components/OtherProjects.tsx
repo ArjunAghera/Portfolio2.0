@@ -1,17 +1,17 @@
-import { off } from "process";
 import React, { useState } from "react";
-import { PhotographyModal } from "./PhotographyModal";
-import { PhotoshopModal } from "./PhotoshopModal";
+import { OtherProjectsModal } from "./OtherProjectsModal";
 
 export const OtherProjects = () => {
-  const [isPhotography, setIsPhotography] = useState<boolean>(false);
-  const [isPhotoshop, setIsPhotoshop] = useState<boolean>(false);
+  const [showModal, setShowModal] = useState<boolean>(false);
+  const [modalTitle, setModalTitle] = useState<string>("");
   const handlePhotography = () => {
-    setIsPhotography(true);
+    setShowModal(true);
+    setModalTitle("Photography");
     document.body.style.overflow = "hidden";
   };
   const handlePhotoshop = () => {
-    setIsPhotoshop(true);
+    setShowModal(true);
+    setModalTitle("Photoshop Artworks");
     document.body.style.overflow = "hidden";
   };
   return (
@@ -41,26 +41,15 @@ export const OtherProjects = () => {
       <div className="">
         <div
           className={
-            isPhotography
+            showModal
               ? `fixed inset-0 flex justify-center items-center z-10 bg-opacity-30 bg-black backdrop-blur-sm`
               : `hidden`
           }
         >
-          <PhotographyModal
-            _isPhotography={isPhotography}
-            setIsPhotography={setIsPhotography}
-          />
-        </div>
-        <div
-          className={
-            isPhotoshop
-              ? `fixed inset-0 flex justify-center items-center z-10 bg-opacity-30 bg-black backdrop-blur-sm`
-              : `hidden`
-          }
-        >
-          <PhotoshopModal
-            _isPhotoshop={isPhotoshop}
-            setIsPhotoshop={setIsPhotoshop}
+          <OtherProjectsModal
+            _showModal={showModal}
+            setShowModal={setShowModal}
+            modalTitle={modalTitle}
           />
         </div>
       </div>
