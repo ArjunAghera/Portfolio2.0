@@ -26,7 +26,7 @@ export const Contactme = () => {
       .catch(function (error) {
         console.error(error);
       });
-  }, []);
+  }, [options]);
   return (
     <div className="background min-h-screen pb-16">
       <h1 className=" text-4xl md:text-6xl font-brandSecondary text-brandTextSecondary font-extrabold text-center pt-20">
@@ -36,7 +36,7 @@ export const Contactme = () => {
         <div>
           <h2 className="font-brandSecondary text-center text-brandTextPrimary font-light text-lg md:text-3xl">
             Send me a message
-            <br /> using smart contract?
+            <br /> using smart contract
           </h2>
           <p className=" font-brandSecondary text-brandTextSecondary font-extralight mt-12 px-12 md:px-12 text-sm md:text-lg">
             <span className="font-bold">{`Plesae note:`}</span>{" "}
@@ -54,11 +54,14 @@ export const Contactme = () => {
               id="message"
               className="mx-8 md:mx-12 h-32 w-5/6 md:h-60 mt-4 text-sm md:text-xl pt-3 pl-4 font-brandSecondary text-brandTextSecondary rounded-2xl background-modal shadow-xl outline-none"
             />
+            <button className="mx-8 md:mx-12 font-brandSecondary w-5/6 text-brandTextSecondary text-sm md:text-xl font-medium bg-gradient-to-tr from-pink-500 to-orange-500 px-8 py-1 rounded-xl mt-4 hover:scale-105 transition-transform shadow-xl">
+              Send Message
+            </button>
           </form>
         </div>
         <div className=" md:border-l border-brandTextSecondary border-spacing-4">
           <h2 className="font-brandSecondary text-center text-brandTextPrimary font-light text-lg md:text-3xl">
-            Connect on my socials?
+            Connect on my socials
           </h2>
           <ul className=" flex flex-row pt-6 text-center md:mt-8 md:gap-8 min-w-fit">
             <li className=" w-1/6 md:w-1/12 object-contain mx-auto">
@@ -71,6 +74,7 @@ export const Contactme = () => {
                   src={github}
                   className=" cursor-pointer"
                   objectFit="contain"
+                  alt="Github link"
                 />
               </a>
             </li>
@@ -84,6 +88,7 @@ export const Contactme = () => {
                   src={linkedin}
                   className=" cursor-pointer"
                   objectFit="contain"
+                  alt="Linkedin link"
                 />
               </a>
             </li>
@@ -97,6 +102,7 @@ export const Contactme = () => {
                   src={twitter}
                   className=" cursor-pointer"
                   objectFit="contain"
+                  alt="Twitter link"
                 />
               </a>
             </li>
@@ -106,6 +112,7 @@ export const Contactme = () => {
                   src={mail}
                   className=" cursor-pointer"
                   objectFit="contain"
+                  alt="Email Address"
                 />
               </a>
             </li>

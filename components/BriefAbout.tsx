@@ -3,9 +3,19 @@ import Image from "next/image";
 import Link from "next/link";
 import myPhoto from "../public/1.png";
 
-const BriefAbout = () => {
+const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
   return (
     <div className=" background min-h-screen">
+      <div>
+        {isAboutPage && (
+          <Link href="/#about">
+            <p className=" font-mono text-brandTextSecondary float-left text-2xl md:text-4xl p-4 cursor-pointer">{`<--`}</p>
+          </Link>
+        )}
+        <h1 className="text-4xl md:text-6xl text-brandTextPrimary text-center pt-16">
+          About Me
+        </h1>
+      </div>
       <div className=" grid grid-flow-row grid-cols-1 lg:grid-cols-2 mx-auto pb-8 max-w-7xl ">
         <motion.div
           className=" mt-24"
@@ -39,11 +49,13 @@ const BriefAbout = () => {
             professional field I will be working in after my studies.
           </p>
           <br />
-          <Link href="/about">
-            <a className=" px-2 text-brandTextSecondary hover:underline underline-offset-2 items-center font-brandSecondary text-2xl font-semibold cursor-pointer italic ">
-              Know me More
-            </a>
-          </Link>
+          {!isAboutPage && (
+            <Link href="/about">
+              <a className=" px-2 text-brandTextSecondary hover:underline underline-offset-2 items-center font-brandSecondary text-2xl font-semibold cursor-pointer italic ">
+                Know me More
+              </a>
+            </Link>
+          )}
         </div>
       </div>
     </div>
