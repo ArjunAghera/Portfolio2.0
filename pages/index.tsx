@@ -6,6 +6,7 @@ import { OtherProjects } from "../components/OtherProjects";
 import WebDevProjects from "../components/WebDevProjects";
 
 export default function Home() {
+  const isAboutPage: boolean = false;
   return (
     <>
       <Head>
@@ -15,8 +16,8 @@ export default function Home() {
       <div className=" bg-1">
         <Hero />
       </div>
-      <div className="bg-2">
-        <BriefAbout />
+      <div id="about" className="bg-2">
+        <BriefAbout isAboutPage={isAboutPage} />
       </div>
       <WebDevProjects />
       <div className="bg-4">
