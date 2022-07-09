@@ -16,7 +16,7 @@ export default function Home() {
       <div className=" bg-1">
         <Hero />
       </div>
-      <div id="about" className="bg-2">
+      <div className="bg-2">
         <BriefAbout isAboutPage={isAboutPage} />
       </div>
       <WebDevProjects />

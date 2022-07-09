@@ -51,7 +51,10 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
           <br />
           {!isAboutPage && (
             <Link href="/about">
-              <a className=" px-2 text-brandTextSecondary hover:underline underline-offset-2 items-center font-brandSecondary text-2xl font-semibold cursor-pointer italic ">
+              <a
+                id="about"
+                className=" px-2 text-brandTextSecondary hover:underline underline-offset-2 items-center font-brandSecondary text-2xl font-semibold cursor-pointer italic "
+              >
                 Know me More
               </a>
             </Link>
