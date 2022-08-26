@@ -41,6 +41,7 @@ export const OtherProjectsModal = ({
         >
           {photos?.map((photo) => (
             <img
+              key={photo.id}
               className=" contain-image "
               loading="lazy"
               src={photo?.image}

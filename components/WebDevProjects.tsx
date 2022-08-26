@@ -12,9 +12,10 @@ const WebDevProjects = ({ projects }: Props) => {
           Projects
         </h1>
       </div>
-      {projects.map(({ id, name, description, image, url }) => (
+      {projects.map(({ id, name, description, image, url }, index) => (
         <WebDevProject
-          id={id}
+          key={id}
+          id={index}
           name={name}
           description={description}
           image={image}

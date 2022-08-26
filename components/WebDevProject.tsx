@@ -3,11 +3,11 @@ import Image from "next/image";
 import mujc from "../public/mujconnect.png";
 
 type Props = {
-  id: String;
-  name: String;
-  description: String;
+  id: number;
+  name: string;
+  description: string;
   image: any;
-  url: String;
+  url: string;
 };
 
 export const WebDevProject = ({ id, name, description, image, url }: Props) => {
@@ -17,7 +17,7 @@ export const WebDevProject = ({ id, name, description, image, url }: Props) => {
         <div className=" border-b border-brandTextPrimary border-opacity-50 pt-20 mx-2 lg:mx-16" />
         <div className=" grid grid-flow-row grid-cols-2 md:flex md:flex-row md:justify-between mx-4 pt-8">
           <p className=" text-xl md:text-3xl lg:text-5xl font-brandPrimary text-brandTextSecondary lg:pl-20">
-            1
+            {id + 1}
           </p>
           <p className=" text-md md:text-lg lg:text-xl font-brandSecondary font-semibold text-brandTextSecondary lg:pr-20 lg:w-1/4 mb-8">
             {description}
@@ -25,7 +25,7 @@ export const WebDevProject = ({ id, name, description, image, url }: Props) => {
         </div>
         <div className=" text-center">
           <a
-            href="https://mujconnect.co"
+            href={url}
             target="_blank"
             rel="noreferrer"
             className=" text-4xl md:text-6xl font-brandSecondary text-brandTextSecondary font-extrabold lg:mt-16"
