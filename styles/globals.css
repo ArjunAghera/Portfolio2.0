@@ -99,3 +99,7 @@ h1 {
 .pt-120 {
   padding-top: 3000px;
 }
+
+.contain-image {
+  object-fit: contain;
+}

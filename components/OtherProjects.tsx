@@ -1,17 +1,25 @@
 import React, { useState } from "react";
 import { OtherProjectsModal } from "./OtherProjectsModal";
 
-export const OtherProjects = () => {
+type Props = {
+  photography: Array<Object>;
+  photoshop: Array<Object>;
+};
+
+export const OtherProjects = ({ photography, photoshop }: Props) => {
   const [showModal, setShowModal] = useState<boolean>(false);
   const [modalTitle, setModalTitle] = useState<string>("");
+  const [photos, setPhotos] = useState<Array<any>>(photography);
   const handlePhotography = () => {
     setShowModal(true);
     setModalTitle("Photography");
+    setPhotos(photography);
     document.body.style.overflow = "hidden";
   };
   const handlePhotoshop = () => {
     setShowModal(true);
     setModalTitle("Photoshop Artworks");
+    setPhotos(photoshop);
     document.body.style.overflow = "hidden";
   };
   return (
@@ -50,6 +58,7 @@ export const OtherProjects = () => {
             _showModal={showModal}
             setShowModal={setShowModal}
             modalTitle={modalTitle}
+            photos={photos}
           />
         </div>
       </div>

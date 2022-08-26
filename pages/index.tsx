@@ -5,7 +5,13 @@ import Hero from "../components/Hero";
 import { OtherProjects } from "../components/OtherProjects";
 import WebDevProjects from "../components/WebDevProjects";
 
-export default function Home() {
+type Props = {
+  projects: Array<Object>;
+  photography: Array<Object>;
+  photoshop: Array<Object>;
+};
+
+export default function Home({ projects, photography, photoshop }: Props) {
   const isAboutPage: boolean = false;
   return (
     <>
@@ -19,13 +25,26 @@ export default function Home() {
       <div className="bg-2">
         <BriefAbout isAboutPage={isAboutPage} />
       </div>
-      <WebDevProjects />
+      <WebDevProjects projects={projects} />
       <div className="bg-4">
-        <OtherProjects />
+        <OtherProjects photography={photography} photoshop={photoshop} />
       </div>
       <div className="bg-5">
         <Contactme />
       </div>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const projects = await fetch(
+    "https://arjun-portfolio-2-0.herokuapp.com/web-projects"
+  ).then((res) => res.json());
+  const photography = await fetch(
+    "https://arjun-portfolio-2-0.herokuapp.com/photography"
+  ).then((res) => res.json());
+  const photoshop = await fetch(
+    "https://arjun-portfolio-2-0.herokuapp.com/photoshop"
+  ).then((res) => res.json());
+  return { props: { projects, photography, photoshop } };
 }
