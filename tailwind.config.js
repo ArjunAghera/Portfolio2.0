@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         brandSecondary: ["Inter"],
+        // brandPrimary: ["Allison"],
       },
     },
   },
