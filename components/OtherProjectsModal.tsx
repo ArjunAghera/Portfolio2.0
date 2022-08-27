@@ -23,7 +23,7 @@ export const OtherProjectsModal = ({
 
   return (
     <>
-      <div className=" relative w-4/5 h-3/4 rounded-2xl background-modal shadow-xl overflow-y-hidden">
+      <div className=" relative w-4/5 h-3/4 rounded-2xl background-modal-op shadow-xl overflow-y-hidden">
         <ul className="flex flex-row justify-evenly w-28 fixed top-4 left-0 right-0">
           <li
             className=" h-4 w-4 cursor-pointer bg-red-700 rounded-full"

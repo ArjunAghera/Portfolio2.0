@@ -66,6 +66,11 @@ h1 {
   backdrop-filter: blur(300px);
 }
 
+.background-modal-op {
+  background: rgba(79, 79, 79, 0.121);
+  backdrop-filter: blur(300px);
+}
+
 .bg-1 {
   background-image: url(../public/Cover-1.png);
   background-size: cover;
