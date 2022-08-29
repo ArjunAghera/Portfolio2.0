@@ -18,18 +18,30 @@ export default function Home({ projects, photography, photoshop }: Props) {
       <Head>
         <title>{`Arjun Aghera's Portfolio`}</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" href="/Cover-1.jpg" />
+        <link rel="preload" href="/Cover-2.jpg" />
+        <link rel="preload" href="/Cover-3.jpg" />
+        <link rel="preload" href="/Cover-4.jpg" />
+        <link rel="preload" href="/Cover-5.jpg" />
       </Head>
-      <div className=" bg-1">
+      <div className=" bg-brandPrimary bg-1">
+        <img src="/Cover-1.jpg" className=" hidden" />
         <Hero />
       </div>
-      <div className="bg-2">
+      <div className=" bg-2 bg-brandPrimary">
+        <img src="/Cover-2.jpg" className=" hidden" />
         <BriefAbout isAboutPage={isAboutPage} />
       </div>
-      <WebDevProjects projects={projects} />
-      <div className="bg-4">
+      <div className=" bg-brandPrimary">
+        <img src="/Cover-3.jpg" className=" hidden" />
+        <WebDevProjects projects={projects} />
+      </div>
+      <div className="bg-4 bg-brandPrimary">
+        <img src="/Cover-4.jpg" className=" hidden" />
         <OtherProjects photography={photography} photoshop={photoshop} />
       </div>
-      <div className="bg-5">
+      <div className="bg-5 bg-brandPrimary">
+        <img src="/Cover-5.jpg" className=" hidden" />
         <Contactme />
       </div>
     </>

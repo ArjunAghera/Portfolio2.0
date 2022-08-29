@@ -7,7 +7,7 @@ type Props = {
 const WebDevProjects = ({ projects }: Props) => {
   return (
     <>
-      <div className=" bg-brandPrimary">
+      <div className=" relative bg-brandPrimary">
         <h1 className="text-4xl md:text-6xl text-brandTextPrimary text-center background pt-32 pb-16">
           Projects
         </h1>

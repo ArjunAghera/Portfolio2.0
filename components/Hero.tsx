@@ -2,16 +2,13 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className=" background h-auto">
+    <div className=" background">
       <div>
         <h1 className=" text-lg lg:text-3xl float-left text-brandTextPrimary pl-16 pt-8 cursor-vertical-text">
           ArjunAghera
         </h1>
       </div>
       <div className=" pt-96  md:pt-96 space-y-6">
-        {/* <p className=" text-center text-md lg:text-xl text-brandSecondary font-brandSecondary lg:float-left  p-4 cursor-default">
-          A Masterpiece of Masterpieces.
-        </p> */}
         <motion.div
           initial="hidden"
           animate="visible"
