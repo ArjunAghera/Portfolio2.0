@@ -31,7 +31,7 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
         >
           <Image
             src={myPhoto}
-            height={2000}
+            height={800}
             objectFit="contain"
             alt="my photo"
           />

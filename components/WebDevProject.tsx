@@ -12,7 +12,7 @@ type Props = {
 
 export const WebDevProject = ({ id, name, description, image, url }: Props) => {
   return (
-    <div className="bg-3">
+    <div className="bg-3 bg-brandPrimary">
       <div className="background">
         <div className=" border-b border-brandTextPrimary border-opacity-50 pt-20 mx-2 lg:mx-16" />
         <div className=" grid grid-flow-row grid-cols-2 md:flex md:flex-row md:justify-between mx-4 pt-8">
