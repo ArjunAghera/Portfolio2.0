@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import github from "../public/github2.png";
 import linkedin from "../public/linkedin2.png";
 import twitter from "../public/twitter2.png";
@@ -54,7 +54,7 @@ export const Contactme = () => {
               id="message"
               className="mx-8 md:mx-12 h-32 w-5/6 md:h-60 mt-4 text-sm md:text-xl pt-3 pl-4 font-brandSecondary text-brandTextSecondary rounded-2xl background-modal shadow-xl outline-none"
             />
-            <button className="mx-8 md:mx-12 font-brandSecondary w-5/6 text-brandTextSecondary text-sm md:text-xl font-medium bg-gradient-to-tr from-pink-500 to-orange-500 px-8 py-1 rounded-xl mt-4 hover:scale-105 transition-transform shadow-xl">
+            <button className="mx-8 md:mx-12 font-brandSecondary w-5/6 text-brandTextSecondary text-sm md:text-xl font-medium bg-gradient-to-tr from-pink-500 to-orange-500 px-8 py-1 rounded-xl mt-4 transition-transform shadow-xl">
               Send Message
             </button>
           </form>
@@ -117,6 +117,18 @@ export const Contactme = () => {
               </a>
             </li>
           </ul>
+          <div className=" mt-16">
+            <button
+              onClick={() =>
+                window.open(
+                  "https://calendly.com/arjunagheraa/meeting-scheduled-through-portfolio"
+                )
+              }
+              className="mx-8 md:mx-12 w-5/6 font-brandSecondary text-brandTextSecondary text-sm md:text-xl font-medium bg-gradient-to-tr from-pink-500 to-orange-500 px-8 py-1 rounded-xl mt-4 transition-transform shadow-xl"
+            >
+              Schedule a meeting
+            </button>
+          </div>
           <div className=" hidden md:block font-brandSecondary px-12 mt-20 text-brandTextSecondary">
             <h3 className=" text-2xl font-medium">A random quote for you:</h3>
             <p className=" pt-2 text-lg font-light">
