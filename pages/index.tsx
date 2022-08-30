@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Blog } from "../components/Blog";
 import BriefAbout from "../components/BriefAbout";
 import { Contactme } from "../components/Contactme";
 import Hero from "../components/Hero";
@@ -36,6 +37,9 @@ export default function Home({ projects, photography, photoshop }: Props) {
         <img src="/Cover-3.jpg" className=" hidden" />
         <WebDevProjects projects={projects} />
       </div>
+      {/* <div className=" bg-brandPrimary">
+        <Blog />
+      </div> */}
       <div className="bg-4 bg-brandPrimary">
         <img src="/Cover-4.jpg" className=" hidden" />
         <OtherProjects photography={photography} photoshop={photoshop} />

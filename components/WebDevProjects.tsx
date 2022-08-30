@@ -12,16 +12,19 @@ const WebDevProjects = ({ projects }: Props) => {
           Projects
         </h1>
       </div>
-      {projects.map(({ id, name, description, image, url }, index) => (
-        <WebDevProject
-          key={id}
-          id={index}
-          name={name}
-          description={description}
-          image={image}
-          url={url}
-        />
-      ))}
+      {projects
+        .slice(0)
+        .reverse()
+        .map(({ id, name, description, image, url }, index) => (
+          <WebDevProject
+            key={id}
+            id={index}
+            name={name}
+            description={description}
+            image={image}
+            url={url}
+          />
+        ))}
     </>
   );
 };
