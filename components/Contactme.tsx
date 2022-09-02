@@ -10,7 +10,7 @@ export const Contactme = () => {
   return (
     <div className="background pb-4">
       <h1 className=" text-4xl md:text-6xl font-brandSecondary text-brandTextSecondary font-extrabold text-center pt-20">
-        Let's Connect!
+        {`Let's Connect!`}
       </h1>
       <ul className=" flex flex-row pt-16 px-4 text-center md:mt-8 md:gap-8 max-w-screen-md mx-auto">
         <li className=" w-1/12 md:w-1/12 object-contain mx-auto hover:scale-105">
