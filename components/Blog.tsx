@@ -1,8 +1,11 @@
-import Image from "next/image";
 import React from "react";
 import { useHorizontalScroll } from "./useSideScroll";
 
-export const Blog = () => {
+type Props = {
+  blogs: any;
+};
+
+export const Blog = ({ blogs }: Props) => {
   const scrollRef: any = useHorizontalScroll();
   return (
     <div className=" background h-auto">
@@ -11,13 +14,17 @@ export const Blog = () => {
       </h1>
       <div
         ref={scrollRef}
-        className=" flex flex-row overflow-x-auto h-80 mt-8 space-x-8 ml-8"
+        className=" flex flex-row overflow-x-auto h-80 mt-12 space-x-8 ml-8"
       >
-        <img src="/Blog1.png" loading="lazy" alt="blog image" />
-        <img src="/Blog1.png" loading="lazy" alt="blog image" />
-        <img src="/Blog1.png" loading="lazy" alt="blog image" />
-        <img src="/Blog1.png" loading="lazy" alt="blog image" />
-        <img src="/Blog1.png" loading="lazy" alt="blog image" />
+        {blogs.map((blog: any, index: number) => (
+          <a key={index} href={blog?.blogLink} target="_blank" rel="noreferrer">
+            <img
+              src={blog?.image}
+              alt="blog image"
+              className="contain-image h-72"
+            />
+          </a>
+        ))}
       </div>
     </div>
   );
