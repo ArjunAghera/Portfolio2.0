@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Blog } from "../components/Blog";
+// import { Blog } from "../components/Blog";
 import BriefAbout from "../components/BriefAbout";
 import { Contactme } from "../components/Contactme";
 import Hero from "../components/Hero";
