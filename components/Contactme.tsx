@@ -14,7 +14,7 @@ export const Contactme = () => {
       </h1>
       <ul className=" flex flex-row pt-16 px-4 text-center md:mt-8 md:gap-8 max-w-screen-md mx-auto">
         <li className=" w-1/12 md:w-1/12 object-contain mx-auto hover:scale-105">
-          <a href="https://linktr.ee/arjunaghera">
+          <a href="https://github.com/ArjunAghera">
             <Image
               src={github}
               className=" cursor-pointer"
@@ -87,7 +87,7 @@ export const Contactme = () => {
       </a>
       <footer className="text-brandTextSecondary font-brandSecondary pt-16 text-center">
         Developed and Designed by{" "}
-        <a href="https://github.com/ArjunAghera" className="font-semibold">
+        <a href="https://peerlist.io/arjunaghera" className="font-semibold">
           Arjun Aghera
         </a>
       </footer>
