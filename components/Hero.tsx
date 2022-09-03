@@ -5,7 +5,7 @@ const Hero = () => {
     <div className=" background">
       <div>
         <h1 className=" text-lg lg:text-3xl float-left text-brandTextPrimary pl-16 pt-8 cursor-vertical-text">
-          AA
+          Arjun Aghera
         </h1>
       </div>
       <div className=" pt-96  md:pt-96 space-y-6">
