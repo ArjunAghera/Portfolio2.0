@@ -1,7 +1,3 @@
-// import { motion } from "framer-motion";
-
-import Link from "next/link";
-
 const Hero = () => {
   return (
     <div className=" background h-screen">
