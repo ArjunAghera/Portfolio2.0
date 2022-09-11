@@ -57,7 +57,7 @@ h1 {
 }
 
 .background {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(98, 98, 98, 0.05);
   backdrop-filter: blur(120px);
   z-index: 5;
 }

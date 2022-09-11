@@ -61,7 +61,7 @@ Props) {
         <link rel="preload" href="/Cover-5.jpg" />
       </Head>
       <div className=" bg-brandPrimary bg-1">
-        <img src="/Cover-1.jpg" className=" hidden" />
+        <img src="/cover-1.jpg" className=" hidden" />
         <Hero />
       </div>
       <div className=" bg-2 bg-brandPrimary">

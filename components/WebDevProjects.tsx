@@ -8,7 +8,7 @@ const WebDevProjects = ({ projects }: Props) => {
   return (
     <>
       <div className=" relative bg-brandPrimary">
-        <h1 className="text-4xl md:text-6xl text-brandTextPrimary text-center background pt-32 pb-16">
+        <h1 className="text-4xl md:text-6xl text-brandTextPrimary font-brandSecondary font-extrabold text-center background pt-32 pb-16">
           Projects
         </h1>
       </div>
