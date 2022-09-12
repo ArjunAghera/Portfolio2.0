@@ -12,7 +12,7 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
             <p className=" font-mono text-brandTextSecondary float-left text-2xl md:text-4xl p-4 cursor-pointer">{`<--`}</p>
           </Link>
         )}
-        <h1 className="text-4xl md:text-6xl text-brandTextPrimary text-center pt-16">
+        <h1 className="text-4xl md:text-6xl text-brandTextPrimary font-brandSecondary font-extrabold text-center pt-16">
           About Me
         </h1>
       </div>

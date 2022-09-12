@@ -28,7 +28,7 @@ export const WebDevProject = ({ id, name, description, image, url }: Props) => {
             href={url}
             target="_blank"
             rel="noreferrer"
-            className=" text-4xl md:text-6xl font-brandSecondary text-brandTextSecondary font-extrabold lg:mt-16"
+            className=" text-4xl md:text-6xl font-brandSecondary opacity-30 text-brandTextSecondary font-extrabold lg:mt-16"
           >
             {name}
           </a>
