@@ -49,7 +49,7 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
             professional field I will be working in after my studies.
           </p>
           <br />
-          {!isAboutPage && (
+          {/* {!isAboutPage && (
             <Link href="/about">
               <a
                 id="about"
@@ -58,7 +58,7 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
                 Know me More
               </a>
             </Link>
-          )}
+          )} */}
         </div>
       </div>
     </div>
