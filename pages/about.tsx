@@ -12,13 +12,16 @@ export default function about() {
         <title>{`About: Arjun Aghera`}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-2">
+      <div className="bg-2 bg-brandPrimary">
+        <img src="/Cover-2.jpg" className=" hidden" />
         <BriefAbout isAboutPage={isAboutPage} />
       </div>
-      <div className="bg-4">
+      <div className="bg-4 bg-brandPrimary">
+        <img src="/Cover-4.jpg" className=" hidden" />
         <Skills />
       </div>
-      <div className="bg-5">
+      <div className="bg-5 bg-brandPrimary">
+        <img src="/Cover-5.jpg" className=" hidden" />
         <Experience />
       </div>
     </>

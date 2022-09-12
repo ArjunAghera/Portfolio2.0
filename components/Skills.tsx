@@ -2,7 +2,7 @@ import React from "react";
 
 export const Skills = () => {
   return (
-    <div className="background min-h-screen pb-8 bg-brandPrimary">
+    <div className="background min-h-screen pb-8">
       <h1 className="text-4xl md:text-6xl font-brandSecondary text-brandTextPrimary text-center pt-20">
         Skills
       </h1>
