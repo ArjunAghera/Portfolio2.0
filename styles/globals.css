@@ -6,31 +6,6 @@
   height: 90vh;
 }
 
-@font-face {
-  font-family: "Agatha Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agatha Regular"), url("../fonts/Agatha.woff") format("woff");
-}
-
-@font-face {
-  font-family: "The Scientist";
-  font-style: normal;
-  font-weight: normal;
-  src: local("The Scientist"), url("../fonts/TheScientist-L3EyW.ttf");
-}
-
-@font-face {
-  font-family: "18C";
-  font-style: normal;
-  font-weight: normal;
-  src: local("18C"), url("../fonts/LovelyCoffee-jEVeO.ttf");
-}
-
-h1 {
-  font-family: "The Scientist";
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
