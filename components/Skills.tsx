@@ -2,8 +2,8 @@ import React from "react";
 
 export const Skills = () => {
   return (
-    <div className="background min-h-screen pb-8">
-      <h1 className="text-4xl md:text-6xl text-brandTextPrimary text-center pt-20">
+    <div className="background min-h-screen pb-8 bg-brandPrimary">
+      <h1 className="text-4xl md:text-6xl font-brandSecondary text-brandTextPrimary text-center pt-20">
         Skills
       </h1>
       <div className=" relative w-4/5 h-88 pb-8 mx-auto mt-20 rounded-2xl background-modal shadow-xl overflow-y-scroll overflow-x-auto">
