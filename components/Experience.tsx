@@ -2,8 +2,8 @@ import React from "react";
 
 export const Experience = () => {
   return (
-    <div className="background min-h-screen">
-      <h1 className="text-4xl md:text-6xl text-brandTextPrimary text-center pt-20">
+    <div className="background min-h-screen bg-brandPrimary">
+      <h1 className="text-4xl md:text-6xl font-brandSecondary text-brandTextPrimary text-center pt-20">
         Experience
       </h1>
       <div className=" mt-28 w-10/12 md:w-2/5 mx-auto">
