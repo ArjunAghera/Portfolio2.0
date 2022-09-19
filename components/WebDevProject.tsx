@@ -24,14 +24,9 @@ export const WebDevProject = ({ id, name, description, image, url }: Props) => {
           </p>
         </div>
         <div className=" text-center">
-          <a
-            href={url}
-            target="_blank"
-            rel="noreferrer"
-            className=" text-4xl md:text-6xl font-brandSecondary opacity-30 text-brandTextSecondary font-extrabold lg:mt-16"
-          >
+          <p className=" text-4xl md:text-6xl font-brandSecondary opacity-30 text-brandTextSecondary font-extrabold lg:mt-16">
             {name}
-          </a>
+          </p>
         </div>
         <motion.div
           initial="hidden"
