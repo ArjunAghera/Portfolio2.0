@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
-    <div className=" background h-screen">
+    <div className=" background h-screen ">
       <div></div>
-      <div className="pt-48 space-y-6">
+      <div className="pt-48 space-y-6 mx-4 md:mx-0">
         <div className=" max-w-screen-lg text-center mx-auto">
           <p className=" text-brandTextPrimary text-2xl font-brandSecondary font-medium">
             Hi, I am

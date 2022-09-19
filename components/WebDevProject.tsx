@@ -36,7 +36,7 @@ export const WebDevProject = ({ id, name, description, image, url }: Props) => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          className="pt-8 md:pt-16 w-fit mx-auto pb-8"
+          className="pt-8 md:pt-16 w-fit mx-2 md:mx-auto pb-8"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
           variants={{
