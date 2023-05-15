@@ -36,40 +36,25 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
             alt="my photo"
           />
         </motion.div>
-        <div className=" lg:pr-20 lg:-ml-16 md:px-40 lg:px-0  text-xs text-center md:text-left md:text-sm lg:text-xl">
+        <div className=" lg:pr-20 lg:-ml-16 md:px-40 lg:px-0 text-xs text-center md:text-left md:text-sm lg:text-xl">
           <p className=" px-2 pt-28 font-brandSecondary text-brandTextSecondary">
-            Hi, I’m Arjun Aghera!
+            Hi, I&apos;m Arjun Aghera, and I am a final year B.Tech student of
+            Computer Science and doing my internship from Philips. My passion
+            for technology and innovation has driven me to develop expertise in
+            a wide range of technologies, including C#, Java, JavaScript,
+            TypeScript, HTML, CSS, React.js, Node.js, Express.js, Next.js,
+            Nest.js, PostgreSQL, MongoDB, MySQL, and various ORMs.
             <br />
-            <br />
-            Currently in my final year at Manipal University Jaipur pursuing
-            Computer Science Engineering. I am a full stack developer with
-            specialization in developing web apps using JavaScript/TypeScript
-            Frameworks/Libraries like React, Node.js, Express.js, Next.js, and
-            Nest.js.
-            <br />
-            <br />
-            I am looking for Full-time roles as a Software Developer.
-            <br />
-            <br />I am passionate about learning new things and having new
-            experiences while working on a project that will help me grow in my
-            career as well as help the organization.
-            {/* <br />
-            <br />
-            Currently, I am looking for a summer internship for two to three
-            months so that I have prior knowledge and experience of the
-            professional field I will be working in after my studies. */}
+            <br /> Throughout my academic journey, I have worked on several
+            projects that have enabled me to apply my skills and knowledge to
+            real-world challenges. These projects have helped me develop strong
+            problem-solving skills, a results-driven approach, and an ability to
+            work collaboratively in a team.
+            <br /> <br /> I am a fast learner, always up for a challenge, and
+            dedicated to delivering results that exceed expectations. I have a
+            keen eye for detail, and I take pride in my ability to create
+            elegant and efficient solutions.
           </p>
-          <br />
-          {/* {!isAboutPage && (
-            <Link href="/about">
-              <a
-                id="about"
-                className=" px-2 text-brandTextSecondary hover:underline underline-offset-2 items-center font-brandSecondary text-2xl font-semibold cursor-pointer underline"
-              >
-                Know me More
-              </a>
-            </Link>
-          )} */}
         </div>
       </div>
     </div>

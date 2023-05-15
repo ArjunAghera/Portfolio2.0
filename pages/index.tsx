@@ -1,24 +1,21 @@
 import Head from "next/head";
-// import { Blog } from "../components/Blog";
 import BriefAbout from "../components/BriefAbout";
 import { Contactme } from "../components/Contactme";
 import Hero from "../components/Hero";
 import { OtherProjects } from "../components/OtherProjects";
 import WebDevProjects from "../components/WebDevProjects";
+import fsPromises from "fs/promises";
+import path from "path";
+import { Experience } from "../components/Experience";
 
 type Props = {
-  projects: Array<Object>;
-  photography: Array<Object>;
-  photoshop: Array<Object>;
-  blogs: Array<Object>;
+  projects: Array<any>;
+  photography: Array<any>;
+  photoshop: Array<any>;
+  blogs: Array<any>;
 };
 
-export default function Home({
-  projects,
-  photography,
-  photoshop,
-}: // blogs,
-Props) {
+export default function Home({ projects, photography, photoshop }: Props) {
   const isAboutPage: boolean = false;
   return (
     <>
@@ -88,17 +85,20 @@ Props) {
 }
 
 export async function getStaticProps() {
-  const projects = await fetch(
-    "https://arjun-portfolio-2-0.herokuapp.com/web-projects"
-  ).then((res) => res.json());
-  const photography = await fetch(
-    "https://arjun-portfolio-2-0.herokuapp.com/photography"
-  ).then((res) => res.json());
-  const photoshop = await fetch(
-    "https://arjun-portfolio-2-0.herokuapp.com/photoshop"
-  ).then((res) => res.json());
-  // const blogs = await fetch(
-  //   "https://arjun-portfolio-2-0.herokuapp.com/blog"
-  // ).then((res) => res.json());
+  const webprojectsPath = path.join(
+    process.cwd(),
+    "data",
+    "webDevProjects.json"
+  );
+  const photographyPath = path.join(process.cwd(), "data", "photography.json");
+  const photoshopPath = path.join(process.cwd(), "data", "photoshop.json");
+
+  const webprojectsData = await fsPromises.readFile(webprojectsPath);
+  const photographyData = await fsPromises.readFile(photographyPath);
+  const photoshopData = await fsPromises.readFile(photoshopPath);
+
+  const projects: object = JSON.parse(webprojectsData.toString());
+  const photography: Array<object> = JSON.parse(photographyData.toString());
+  const photoshop: Array<object> = JSON.parse(photoshopData.toString());
   return { props: { projects, photography, photoshop } };
 }
