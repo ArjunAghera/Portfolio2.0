@@ -3,7 +3,7 @@ import React from "react";
 export const Experience = () => {
   return (
     <div className="background min-h-screen">
-      <h1 className="text-4xl md:text-6xl font-brandSecondary text-brandTextPrimary text-center pt-20">
+      <h1 className="text-4xl md:text-6xl text-brandTextPrimary font-brandSecondary font-extrabold text-center pt-16">
         Experience
       </h1>
       <div className=" mt-28 w-10/12 md:w-2/5 mx-auto">
@@ -22,7 +22,9 @@ export const Experience = () => {
             <p className=" text-md md:text-lg lg:text-xl italic font-light text-brandTextSecondary font-brandSecondary">
               Sept 2021 - Jul 2022
             </p>
-            <div className=" text-lg font-light font-brandSecondary text-brandTextSecondary"></div>
+            <div className=" text-lg font-light font-brandSecondary text-brandTextSecondary">
+              <ul></ul>
+            </div>
           </div>
         </div>
       </div>
