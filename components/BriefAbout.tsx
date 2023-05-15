@@ -38,7 +38,7 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
         </motion.div>
         <div className=" lg:pr-20 lg:-ml-16 md:px-40 lg:px-0 text-xs text-center md:text-left md:text-sm lg:text-xl">
           <p className=" px-2 pt-28 font-brandSecondary text-brandTextSecondary">
-            Hi, I'm Arjun Aghera, and I am a final year B.Tech student of
+            Hi, I&apos;m Arjun Aghera, and I am a final year B.Tech student of
             Computer Science and doing my internship from Philips. My passion
             for technology and innovation has driven me to develop expertise in
             a wide range of technologies, including C#, Java, JavaScript,
