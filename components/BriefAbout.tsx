@@ -38,22 +38,20 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
         </motion.div>
         <div className=" lg:pr-20 lg:-ml-16 md:px-40 lg:px-0 text-xs text-center md:text-left md:text-sm lg:text-xl">
           <p className=" px-2 pt-28 font-brandSecondary text-brandTextSecondary">
-            Hi, I&apos;m Arjun Aghera, and I am a final year B.Tech student of
-            Computer Science and doing my internship from Philips. My passion
-            for technology and innovation has driven me to develop expertise in
-            a wide range of technologies, including C#, Java, JavaScript,
-            TypeScript, HTML, CSS, React.js, Node.js, Express.js, Next.js,
-            Nest.js, PostgreSQL, MongoDB, MySQL, and various ORMs.
+            Hi, I&apos;m Arjun Aghera,a software engineer who enjoys building reliable backend systems, automating the boring parts, 
+            and making complex workflows simpler for both developers and end users. I’ve worked across a mix of areas including backend 
+            development, authentication, installation tooling, environment setup, debugging distributed components, and improving 
+            developer experience with automation and clean documentation.
             <br />
-            <br /> Throughout my academic journey, I have worked on several
-            projects that have enabled me to apply my skills and knowledge to
-            real-world challenges. These projects have helped me develop strong
-            problem-solving skills, a results-driven approach, and an ability to
-            work collaboratively in a team.
-            <br /> <br /> I am a fast learner, always up for a challenge, and
-            dedicated to delivering results that exceed expectations. I have a
-            keen eye for detail, and I take pride in my ability to create
-            elegant and efficient solutions.
+            <br />
+            I like understanding how things work end to end, whether it’s designing a secure server-to-server flow with OIDC, 
+            improving deployment logic, or writing tools that make setup predictable. I’ve also spent time contributing to 
+            components across teams, supporting integrations, learning new technologies on the go, and helping others understand system behavior.
+            <br />
+            <br />
+            Outside of work, I enjoy exploring new ideas through side projects like Spends, where I’ve worked with cloud functions, 
+            Gmail Pub/Sub notifications, data encryption, and mobile development. I’m always learning, experimenting, and trying to build things 
+            that are both practical and enjoyable to use.
           </p>
         </div>
       </div>
