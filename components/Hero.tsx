@@ -11,7 +11,7 @@ const Hero = () => {
             Arjun Aghera
           </h1>
           <h2 className=" text-brandTextSecondary text-3xl font-bold opacity-20 font-brandSecondary pt-4">
-            Software Developer; currently exploring DevOps & Web3.0
+            Software Developer; currently exploring System design & building Spends
           </h2>
           <p>
             <div className=" max-w-screen-md mx-auto justify-center flex flex-row space-x-4">
