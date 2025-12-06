@@ -37,12 +37,12 @@ export const OtherProjectsModal = ({
         </h1>
         <div
           ref={scrollRef}
-          className=" flex flex-row overflow-x-auto h-80 mt-8 space-x-4 ml-4"
+          className="flex flex-row overflow-x-auto h-48 sm:h-64 md:h-72 lg:h-80 xl:h-[28rem] 2xl:h-[32rem] mt-8 space-x-4 mx-4 pb-4"
         >
           {photos?.map((photo) => (
             <img
               key={photo.id}
-              className=" contain-image "
+              className="h-full w-auto object-contain flex-shrink-0 rounded-lg"
               loading="lazy"
               src={photo?.image}
               alt="photos"

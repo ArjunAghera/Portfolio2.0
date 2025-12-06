@@ -18,7 +18,7 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
       </div>
       <div className=" grid grid-flow-row grid-cols-1 lg:grid-cols-2 mx-auto pb-8 max-w-7xl">
         <motion.div
-          className=" mt-24"
+          className="mt-24 overflow-hidden"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -32,11 +32,13 @@ const BriefAbout = ({ isAboutPage }: { isAboutPage: boolean }) => {
           <Image
             src={myPhoto}
             height={650}
-            objectFit="contain"
+            width={650}
+            sizes="(max-width: 768px) 90vw, (max-width: 1024px) 50vw, 650px"
+            className="max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto object-contain mx-auto"
             alt="my photo"
           />
         </motion.div>
-        <div className=" lg:pr-20 lg:-ml-16 md:px-40 lg:px-0 text-xs text-center md:text-left md:text-sm lg:text-xl">
+        <div className="lg:pr-20 lg:pl-4 md:px-40 lg:px-0 text-xs text-center md:text-left md:text-sm lg:text-xl">
           <p className=" px-2 pt-28 font-brandSecondary text-brandTextSecondary">
             Hi, I&apos;m Arjun Aghera,a software engineer who enjoys building reliable backend systems, automating the boring parts, 
             and making complex workflows simpler for both developers and end users. I’ve worked across a mix of areas including backend 

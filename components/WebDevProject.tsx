@@ -31,7 +31,7 @@ export const WebDevProject = ({ id, name, description, image, url }: Props) => {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          className="pt-8 md:pt-16 w-fit mx-2 md:mx-auto pb-8"
+          className="pt-8 md:pt-16 px-2 lg:px-16 pb-8"
           viewport={{ once: true }}
           transition={{ duration: 1 }}
           variants={{
@@ -41,9 +41,10 @@ export const WebDevProject = ({ id, name, description, image, url }: Props) => {
         >
           <Image
             src={image}
-            objectFit="contain"
             height={743}
             width={1321}
+            sizes="100vw"
+            className="w-full h-auto object-contain"
             alt="my photo"
           />
         </motion.div>
