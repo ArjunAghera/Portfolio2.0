@@ -13,8 +13,7 @@ const Hero = () => {
           <h2 className=" text-brandTextSecondary text-3xl font-bold opacity-20 font-brandSecondary pt-4">
             Software Developer; exploring System Design & building Spends
           </h2>
-          <p>
-            <div className=" max-w-screen-md mx-auto justify-center flex flex-row space-x-4">
+          <div className=" max-w-screen-md mx-auto justify-center flex flex-row space-x-4">
               <a
                 href="https://drive.google.com/file/d/1b7sXIpfvM1_olcHW92AN2PyxH-BF7BoZ/view?usp=sharing"
                 target="_blank"
@@ -36,7 +35,6 @@ const Hero = () => {
                 </p>
               </a>
             </div>
-          </p>
         </div>
       </div>
     </div>
