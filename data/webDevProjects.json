@@ -1,5 +1,12 @@
 [
   {
+    "id": "fpflitrf9tmdw73s3j0p",
+    "name": "Spends",
+    "description": "A mobile app to automatically track your spending.",
+    "url": "https://spends-app.arjunaghera.com",
+    "image": "https://res.cloudinary.com/arjunportfoliostorage/image/upload/v1778345145/spendssiteporttfoloioimage_wda458.png"
+  },
+  {
     "id": "fpflitrf9tmdw73s3j0m",
     "name": "QAC-Portal",
     "description": "A web app to collect and manage data with report generation.",
